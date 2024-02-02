@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: rgb(190, 182, 182);
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px; 
+        }
+
+        nav h2 {
+            margin-left: 20px;
+            flex-grow: 1;
+        }
+
+        nav h2 a {
+            text-decoration: none;
+            color: black;
+            font-size: 2rem;
+            margin-top: -20px;
+            margin-left: -20px;
+        }
+
+        nav h2 a:hover {
+            color: aliceblue;
+        }
+
+        nav h2 img{
+            width: 50px;
+            border-radius: 2rem;
+            margin-left: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin-right: 20px;
+            margin-top:20px ;
+        }
+
+        nav ul li {
+            margin-right: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.4rem;
+        }
+
+        nav ul li a:hover {
+            color: aliceblue;
+        }
+
+        .home {
+            width: 98.8vw;
+            height: 100vh;
+            background: url('download.webp');
+            background-size: cover;
+            margin-top: -20px;
+            padding: 0; 
+            display: flex;
+            align-items: center; 
+            justify-content: center; 
+            text-align: center;
+            color: aliceblue;
+        }
+
+        #typing {
+ width: auto;
+ color: #fdfdfd;
+ float: left;
+ font-size: 50px;
+ margin: 0 auto;
+ padding: 10px;
+ overflow: hidden;
+ white-space: nowrap;
+ animation: typing 4s steps(26) 1s infinite;
+ }
+#typing span{
+ color:#000000;
+}
+#crow {
+ float: left;
+ margin-top: 10px;
+ color: #000000;
+ font-size: 50px;
+ animation: crow 0.5s linear 0s infinite;
+ }
+@keyframes typing {
+  from {
+      width: 0;
+  }
+   to {
+      width: 460px;
+   }
+}
+@keyframes crow {
+   from {
+   opacity: 0;
+   }
+
+    to {
+   opacity: 1;
+   }
+}
+.about{
+    
+}
+.about h1 {
+    text-align: center;
+}
+.card{
+    background-color: rgb(228, 228, 228);
+    width: 12rem;
+    height: 8.5rem;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 2rem;
+    margin-left:2rem ;
+    display: inline-block;
+}
+.card:hover{
+    width: 13rem;
+}
+
+.bacacard{
+    margin: 20px;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <h2><a href="#home">Yon</a>
+        <img src="profil.jpg" alt=""></h2>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Cerita</a></li>
+            <li><a href="#">Service</a></li>
+        </ul>
+    </nav>
+    <section id="home" class="home">
+        <div class="bacahome">
+            <div id="typing">DAR <br><span>Dion Ahza Rabbani</span></div>
+            <div id="crow">|</div>
+    </div>
+    </section>
+    <section id="about" class="about">
+        <h1>Tentang saya</h1>
+    <div class="card">
+        <div class="bacacard">
+        <img src="logoBola.svg" alt="">
+        <hr>
+        <p>Saya Hobi bermain futsal</p>
+    </div>
+    </div>
+    <div class="card">
+        <div class="bacacard">
+        <img src="logoMusic.svg" alt="">
+        <hr>
+        <p>Saya Hobi bermain Music</p>
+    </div>
+    </div>
+    </section>
+</body>
+</html>
